@@ -16,6 +16,7 @@
 		AFD34A2C2188A21800316E3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD34A2B2188A21800316E3F /* main.m */; };
 		AFD34A362188A21800316E3F /* iOSFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD34A352188A21800316E3F /* iOSFrameTests.m */; };
 		AFD34A412188A21800316E3F /* iOSFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD34A402188A21800316E3F /* iOSFrameUITests.m */; };
+		AFD34A542188B0A600316E3F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD34A532188B0A600316E3F /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		AFD34A3C2188A21800316E3F /* iOSFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD34A402188A21800316E3F /* iOSFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSFrameUITests.m; sourceTree = "<group>"; };
 		AFD34A422188A21800316E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD34A522188B0A600316E3F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		AFD34A532188B0A600316E3F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		AFD34A182188A20F00316E3F /* iOSFrame */ = {
 			isa = PBXGroup;
 			children = (
+				AFD34A4E2188AFC400316E3F /* Base */,
 				AFD34A192188A20F00316E3F /* AppDelegate.h */,
 				AFD34A1A2188A20F00316E3F /* AppDelegate.m */,
 				AFD34A1C2188A20F00316E3F /* ViewController.h */,
@@ -133,6 +137,39 @@
 				AFD34A422188A21800316E3F /* Info.plist */,
 			);
 			path = iOSFrameUITests;
+			sourceTree = "<group>";
+		};
+		AFD34A4E2188AFC400316E3F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AFD34A512188AFE300316E3F /* Controller */,
+				AFD34A502188AFDA00316E3F /* Model */,
+				AFD34A4F2188AFD400316E3F /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AFD34A4F2188AFD400316E3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFD34A502188AFDA00316E3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFD34A512188AFE300316E3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFD34A522188B0A600316E3F /* BaseViewController.h */,
+				AFD34A532188B0A600316E3F /* BaseViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +235,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "罗映星";
+				ORGANIZATIONNAME = luoyingxing;
 				TargetAttributes = {
 					AFD34A152188A20F00316E3F = {
 						CreatedOnToolsVersion = 10.0;
@@ -266,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD34A242188A20F00316E3F /* iOSFrame.xcdatamodeld in Sources */,
+				AFD34A542188B0A600316E3F /* BaseViewController.m in Sources */,
 				AFD34A1E2188A20F00316E3F /* ViewController.m in Sources */,
 				AFD34A2C2188A21800316E3F /* main.m in Sources */,
 				AFD34A1B2188A20F00316E3F /* AppDelegate.m in Sources */,
